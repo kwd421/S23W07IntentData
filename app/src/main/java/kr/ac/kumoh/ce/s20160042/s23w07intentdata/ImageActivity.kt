@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.View.OnClickListener
+import androidx.activity.result.contract.ActivityResultContracts
 import kr.ac.kumoh.ce.s20160042.s23w07intentdata.databinding.ActivityImageBinding
 
 class ImageActivity : AppCompatActivity(), OnClickListener {
@@ -19,6 +20,7 @@ class ImageActivity : AppCompatActivity(), OnClickListener {
     }
     private lateinit var main: ActivityImageBinding
     private lateinit var imageName: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         main = ActivityImageBinding.inflate(layoutInflater)
